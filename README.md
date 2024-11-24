@@ -26,23 +26,7 @@ allprojects {
 
 该配置用于添加抖音 SDK 的 Maven 仓库地址，由于通过对模块添加该仓库在测试环境下会出现无法下载 SDK 的问题，所以需要手动在原生项目中集成该仓库。
 
-在 `main/AndroidManifest.xml` 中添加如下配置：
-
-```xml
-
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-  <queries>
-    <!--允许查询抖音和抖音极速版的软件包信息-->
-    <package android:name="com.ss.android.ugc.aweme" />
-    <package android:name="com.ss.android.ugc.aweme.lite" />
-    <package android:name="com.ss.android.ugc.live" />
-  </queries>
-</manifest>
-```
-
-该配置用于声明你的应用会使用到抖音 SDK，以便在 Android 11 以上的设备上可以正常使用 SDK。
-
-同时，你需要注册该 SDK 的 Activity，添加如下配置：
+在 `main/AndroidManifest.xml` 中注册该 SDK 的 Activity，添加如下配置：
 
 ```xml
 <activity android:name="com.lnyynet.expomodule.dysdk.douyinapi.DouYinEntryActivity"
