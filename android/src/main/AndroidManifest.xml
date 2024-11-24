@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- needed when targetSdkVersion>=30 -->
+    <queries>
+        <!--允许查询抖音和抖音极速版的软件包信息-->
+        <package android:name="com.ss.android.ugc.aweme" />
+        <package android:name="com.ss.android.ugc.aweme.lite" />
+        <package android:name="com.ss.android.ugc.live" />
+    </queries>
+</manifest>

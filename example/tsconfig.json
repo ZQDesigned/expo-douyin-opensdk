@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-douyin-opensdk": ["../src/index"],
+      "expo-douyin-opensdk/*": ["../src/*"]
+    }
+  }
+}
